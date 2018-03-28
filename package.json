@@ -1,0 +1,33 @@
+{
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "mocha": "^5.0.4",
+    "nodemon": "^1.17.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "name": "es7-server",
+  "description": "",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist",
+    "server": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottXiong/express-es6.git"
+  },
+  "author": "Scott Xiong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScottXiong/express-es6/issues"
+  },
+  "homepage": "https://github.com/ScottXiong/express-es6#readme"
+}
