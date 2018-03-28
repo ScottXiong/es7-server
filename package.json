@@ -5,6 +5,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
     "mocha": "^5.0.4",
+    "mongoose": "^5.0.12",
     "nodemon": "^1.17.2"
   },
   "dependencies": {
