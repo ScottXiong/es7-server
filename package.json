@@ -19,7 +19,7 @@
   "scripts": {
     "start": "nodemon src/index.js --exec babel-node",
     "build": "babel src -d dist",
-    "server": "node dist/index.js",
+    "server": "pm2 start dist/index.js",
     "test": "mocha --compilers js:babel-register"
   },
   "repository": {
